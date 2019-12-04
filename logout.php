@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	session_destroy();
+	   if(!isset($_SESSION['se']))
+	   {
+			header("location:firstpage.php");
+			exit();
+	   }
+?>
